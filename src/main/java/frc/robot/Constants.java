@@ -59,7 +59,7 @@ public final class Constants {
         public static final int driveContinuousCurrentLimit = 80;
 
         /* Angle Motor PID Values */
-        public static final double angleKP = 0.01;
+        public static final double angleKP = 0.01; //well these definitely aren't right!
         public static final double angleKI = 0.0;
         public static final double angleKD = 0.0;
         public static final double angleKFF = 0.0;
@@ -101,6 +101,7 @@ public final class Constants {
         //frontright
         //drive motor = cansparkmax plugged in
         public static final class Mod1 {
+             // wrong ID
             public static final int driveMotorID = 2;
             public static final int angleMotorID = 1;
             public static final int canCoderID = 23;
@@ -112,6 +113,7 @@ public final class Constants {
         /* Module 3 */
         //backright
         public static final class Mod3 {
+             // wrong ID
             public static final int driveMotorID = 4;
             public static final int angleMotorID = 3;
             public static final int canCoderID = 22;
@@ -124,6 +126,7 @@ public final class Constants {
         /* Module 4 */
         //backleft
         public static final class Mod4 {
+            // wrong ID
             public static final int driveMotorID = 6;
             public static final int angleMotorID = 5;
             public static final int canCoderID = 24;
@@ -135,6 +138,7 @@ public final class Constants {
         /* Module 2 */
         //frontleft
         public static final class Mod2 {
+             // wrong ID
             public static final int driveMotorID = 7;
             public static final int angleMotorID = 8;
             public static final int canCoderID = 21;
