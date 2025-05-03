@@ -74,6 +74,7 @@ public class Swerve extends SubsystemBase {
         }
     }
 
+
     public Pose2d getPose() {
         return swerveOdometry.getPoseMeters();
     }
@@ -95,6 +96,11 @@ public class Swerve extends SubsystemBase {
             mSwerveMods[mod.moduleNumber].resetToAbsolute();
         }
     }
+
+    
+
+    
+    
 
     public SwerveModulePosition[] getPositions() {
         SwerveModulePosition[] positions = new SwerveModulePosition[mSwerveMods.length];
@@ -125,6 +131,8 @@ public class Swerve extends SubsystemBase {
                     : Rotation2d.fromDegrees(gyro_yaw);
         }
     }
+   
+    
 
     @Override
     public void periodic() {

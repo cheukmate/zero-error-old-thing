@@ -1,6 +1,8 @@
 package frc.robot;
 
 
+
+
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 
 import edu.wpi.first.math.geometry.Rotation2d;
@@ -16,6 +18,8 @@ public final class Constants {
     public static final CTREConfigs ctreConfigs = new CTREConfigs();
     public static final int driverPort = 0;
     public static final int operatorPort = 1;
+    
+    
 
     public static final class Swerve {
         public static final double stickDeadband = 0.4;
@@ -27,6 +31,7 @@ public final class Constants {
         public static final double trackWidth = Units.inchesToMeters(23);
         public static final double wheelBase = Units.inchesToMeters(22);
         public static final double wheelDiameter = Units.inchesToMeters(4.0);
+        public static final double wheelRadius = Units.inchesToMeters(wheelDiameter)/2;
         public static final double wheelCircumference = wheelDiameter * Math.PI;
 
         public static final double openLoopRamp = 0.25;
