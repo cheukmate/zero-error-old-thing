@@ -6,6 +6,7 @@ package frc.robot;
 
 
 
+import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
@@ -57,6 +58,7 @@ private final CommandXboxController m_operatorController =
 
     /* Subsystems */
     private final Swerve s_Swerve = new Swerve();
+    private final BlankCommand blankCommand = new BlankCommand();
   
     
 
@@ -80,7 +82,7 @@ private final CommandXboxController m_operatorController =
 
         m_operatorController
         .a()
-        .onTrue(null);
+        .onTrue(blankCommand);
     }
 
     /**
@@ -94,6 +96,7 @@ private final CommandXboxController m_operatorController =
     private void configureButtonBindings() {
         /* Driver Buttons */
 
+        DriverStation.silenceJoystickConnectionWarning(true);
         zeroGyro.onTrue(new InstantCommand(() -> s_Swerve.zeroGyro()));
        
 
